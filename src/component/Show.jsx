@@ -15,7 +15,7 @@ const Show = () => {
           {users.map(user => (
             <li className=' h-fit w-fit p-5 rounded-lg bg-slate-400 text-white text-2xl' key={user.id}>
               id: {user.id}<br /> Name: {user.name}<br /> Email: {user.email}<br /> Contact: {user.contact}
-              <button className='h-fit w-fit bg-slate-500 rounded-lg text-xl p-2 ml-8' onClick={() => handleDelete(user.id)}>Delete</button>
+              <br /><button className='h-fit w-fit bg-slate-500 rounded-lg text-xl p-2 mt-4' onClick={() => handleDelete(user.id)}>Delete</button>
 
             </li>           
           ))}
